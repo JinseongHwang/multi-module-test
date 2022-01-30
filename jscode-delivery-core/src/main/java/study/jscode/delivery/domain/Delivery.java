@@ -36,6 +36,9 @@ public class Delivery {
 	}
 
 	public void release(String location) {
+		if(this.readyStatus != ReadyStatus.PREPARING) {
+			throw new IllegalStateException("출고할 수 없습니다.");
+		}
 		this.readyStatus = ReadyStatus.RELEASING;
 		this.location = location;
 	}
