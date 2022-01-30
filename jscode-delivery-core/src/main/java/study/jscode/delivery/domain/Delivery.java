@@ -47,7 +47,7 @@ public class Delivery {
 		if(this.readyStatus == ReadyStatus.RELEASING) {
 			this.readyStatus = ReadyStatus.DELIVERING;
 		} else if(this.readyStatus != ReadyStatus.DELIVERING) {
-			throw new IllegalStateException("배송이 가능하지 않습니다.");
+			throw new IllegalStateException("배송이 불가능합니다.");
 		}
 		this.location = location;
 	}
