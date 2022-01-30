@@ -1,1 +1,8 @@
 rootProject.name = 'jscode'
+include 'jscode-api'
+include 'jscode-admin'
+include 'jscode-batch'
+include 'jscode-user-core'
+include 'jscode-delivery-core'
+include 'jscode-product-core'
+
