@@ -1,16 +1,5 @@
-plugins {
-    id 'java'
-}
-
-group 'study'
-version '0.0.1-SNAPSHOT'
-
-repositories {
-    google()
-    mavenCentral()
-}
-
 dependencies {
+    implementation project(path: ':jscode-delivery-core', configuration : 'default')
     implementation 'org.springframework.boot:spring-boot-starter-batch'
     testImplementation 'org.springframework.batch:spring-batch-test'
 }

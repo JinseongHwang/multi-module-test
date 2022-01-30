@@ -1,6 +1,5 @@
 plugins {
 	id 'org.springframework.boot' version '2.5.9'
-	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 	id 'java'
 }
 
@@ -9,7 +8,7 @@ jar { enabled = true }
 
 subprojects {
 
-	group = 'study'
+	group = 'study.jscode'
 	version = '0.0.1-SNAPSHOT'
 	sourceCompatibility = '11'
 
@@ -24,7 +23,6 @@ subprojects {
 	}
 
 	repositories {
-		google()
 		mavenCentral()
 	}
 
